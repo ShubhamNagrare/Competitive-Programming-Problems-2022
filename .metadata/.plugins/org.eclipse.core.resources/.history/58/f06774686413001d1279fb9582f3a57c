@@ -1,0 +1,24 @@
+package Misc;
+
+public class MaxHeap_UsingArray {
+	
+	int theHeap[];
+	int capacity;
+	int pos;
+	
+	public MaxHeap_UsingArray() {
+		
+		pos = 1;
+		capacity = 10;
+		theHeap = new int[capacity];
+	}
+	
+	
+	public void insert(int value) {
+		
+	}
+	
+	
+	
+
+}

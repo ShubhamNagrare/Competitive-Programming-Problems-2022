@@ -1,0 +1,25 @@
+import Misc.MaxHeap_UsingArray;
+
+public class TheMain {
+
+	public static void main(String[] args) {
+		
+		System.out.println("I WILL MASTER DATA STRUCTURE");
+		
+		MaxHeap_UsingArray m = new MaxHeap_UsingArray();
+		
+		m.insert(55);
+		m.insert(83);
+		m.insert(88);
+		m.insert(19);
+		m.insert(6);
+		m.insert(8);
+		m.insert(1);
+		m.insert(5);
+		m.insert(12);
+		m.insert(18);
+		
+
+	}
+
+}

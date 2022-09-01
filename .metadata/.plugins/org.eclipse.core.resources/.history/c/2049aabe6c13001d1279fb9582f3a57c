@@ -1,0 +1,17 @@
+import Misc.MaxHeap_UsingArray;
+import Misc.MinHeap_UsingArray;
+import Misc.Reverse_Array;
+
+public class TheMain {
+
+	public static void main(String[] args) {
+		
+		System.out.println("I WILL MASTER DATA STRUCTURE");
+		
+		Reverse_Array m = new Reverse_Array();
+			
+		m.reverse();
+
+	}
+
+}
