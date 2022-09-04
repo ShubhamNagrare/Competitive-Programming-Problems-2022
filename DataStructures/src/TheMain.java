@@ -1,3 +1,9 @@
+import Array.Mountains;
+import Array.Pairs;
+import Array.Triplets;
+import DynamicProgramming.Knapsack_Memoization;
+import DynamicProgramming.Knapsack_Recursive;
+import DynamicProgramming.Knapsack_TopDownApproach;
 import Misc.MaxHeap_UsingArray;
 import Misc.MinHeap_UsingArray;
 import Misc.MinMax_Array;
@@ -9,9 +15,7 @@ public class TheMain {
 		
 		System.out.println("I WILL MASTER DATA STRUCTURE");
 		
-		MinMax_Array m = new MinMax_Array();
-			
-		m.check();
+		Mountains.run();
 
 	}
 

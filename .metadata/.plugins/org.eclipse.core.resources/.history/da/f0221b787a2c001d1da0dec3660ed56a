@@ -1,0 +1,22 @@
+package Array;
+
+public class Mountains {
+	
+	public static void run() {
+		
+		int[] arr = {};
+		
+		int val = 
+		
+	}
+	
+	private static int mountains(int[] arr) {
+		
+		int retVal = 0;
+		
+		
+		
+		return retVal;
+	}
+
+}

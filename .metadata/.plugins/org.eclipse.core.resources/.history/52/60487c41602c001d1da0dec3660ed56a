@@ -1,0 +1,55 @@
+package Array;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Triplets {
+
+	public static void run() {
+		
+		int[] arr = {1,2,3,4,5,6,7,8,9,11};	
+		int target = 18;
+		
+		 List<int[]> ans = triplets(arr, target);	 
+		 for(int[] curr : ans){		 
+			 System.out.println("[" + curr[0] + "," + curr[1] + "," + curr[2] + "]");		 
+		 }	
+		
+			
+	}
+	
+	private static List<int[]> triplets(int[] arr, int target){
+		
+		List<int[]> retVal = new ArrayList<int[]>();
+		
+		for(int i=0; i< arr.length; i++) {
+			
+			int k = i+1;
+			int j = arr[arr.length-1];
+			
+			while(i<j) {
+				
+				int val = arr[i] +  k + arr[j];
+				
+				if(val < target) {
+					k++;
+				}
+				else if(val > target) {
+					j--;
+				}
+				else {
+					int[] curr = {arr[i] + arr[k] + arr[j]};
+					retVal.add(curr);
+					break;
+				}	
+			}
+			
+		}
+		
+		
+		
+		return retVal;
+	}
+	
+	
+}

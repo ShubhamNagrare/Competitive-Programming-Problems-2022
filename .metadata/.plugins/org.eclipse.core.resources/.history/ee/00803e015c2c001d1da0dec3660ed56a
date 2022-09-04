@@ -1,0 +1,46 @@
+package Array;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+public class Pairs {
+	
+	
+	public static void run() {
+		
+		int[] arr = {10,5,2,3-6,9,11};	
+		int sum = 4;
+		
+		 List<int[]> ans = pairs(arr, sum);
+		 
+		 for(int[] curr : ans){		 
+			 System.out.println("[" + curr[0] + "," + curr[1] + "]");		 
+		 }			
+	}
+	
+	
+	private static List<int[]> pairs(int[] arr, int sum){
+		
+		List<int[]> retval = new ArrayList<int[]>();
+		HashSet<Integer> set = new HashSet();
+		
+		for(int i=0; i< arr.length; i++) {
+			
+			int searchVal = sum - arr[i];
+			
+			if(set.contains(searchVal)) {
+				int[] curr = {arr[i], searchVal};
+			}
+			
+			set.add(arr[i]);
+		}
+		
+		return retval;
+		
+	}
+	
+	
+	
+
+}
